@@ -1,0 +1,113 @@
+main
+    height: 100vh
+    background: url('../assets/main-bg.jpg')
+    background-size: cover
+    background-position: center
+    .bg-blue
+        background: url('../assets/bg-blue.png')
+        background-repeat: no-repeat
+        background-size: cover
+        padding: 3em
+        +for-ipad
+            padding: 0
+            background-size: auto
+        img
+            padding: 3em
+            +for-ipad
+                padding: 0
+
+.blue-line
+    width: 50%
+    border-top: 3px solid $primary-color
+
+.white-line
+    border-top: 3px solid $white
+
+.team
+    .team-member
+        border-radius: 50%
+        overflow: hidden
+        height: 150px
+        width: 150px
+
+.event-card
+    min-height: 275px
+    .btn-events
+        border: solid 1px $white
+        transition: .3s
+        padding: 5px 20px
+        &:hover
+            border: solid 1px rgba(0 ,0 ,0 ,0 )
+            background: $white
+            color: $primary-color !important
+.next-events
+    transition: .3s
+    &:hover
+        background-color:$dark-gray !important
+    .col-4
+        border-right: 2px solid $primary-text
+    h3
+        color: crimson
+
+#news
+    min-height: 100vh
+
+.btn-news
+    border: solid 1px $primary-color
+    transition: .3s
+    padding: 5px 20px
+    color: $primary-color
+    &:hover
+        border: solid 1px $primary-color
+        background: $primary-color
+        color: white
+
+.carousel-indicators
+    bottom: -60px
+    li
+        border-radius: 50%
+        height: 15px
+        width: 15px
+        background-color: lightgray
+    .active
+        background-color: $primary-color
+
+#contact
+    min-height: 100vh
+    background-image: url('../assets/bg-contact.png')
+    background-position: center
+    background-size: cover
+    .form-group
+        input, textarea
+            border-radius: 10px
+            border: none
+    .btn
+        border: solid 1px $white
+        transition: .3s
+        padding: 5px 40px
+        color: $white
+        &:hover
+            border: solid 1px $primary-color
+            background: $white
+            color: $primary-color
+
+footer
+    background-color: darkgray
+    .footer-logo
+        border-right: solid 2px $white
+        img
+            height: 80px
+    .rrss
+        border-radius: 50%
+        background: $white
+        height: 35px
+        width: 35px
+        transition: .3s
+        border: solid 1px $white
+        i
+            color: darkgray
+            font-size: 1.4em
+    ul
+        list-style: none
+
+
